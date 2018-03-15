@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     steps:
+      -run:
+         name: "install powershell"
+         command: bash ./install-power-shell.sh
       - run:
           name: Greeting
           command: echo Hello, world.
       - run:
           name: Print the Current Time
           command: date
-  dependencies:
-    pre:
-      - bash ./install-power-shell.sh
 
