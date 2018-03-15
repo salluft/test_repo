@@ -3,7 +3,7 @@ jobs:
   build:
     steps:
       - checkout
-      -run:
+      - run:
          name: "install powershell"
          command: bash ./install-power-shell.sh
       - run:
