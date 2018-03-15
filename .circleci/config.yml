@@ -6,7 +6,7 @@ jobs:
       - checkout
       - run:
          name: "install powershell"
-         command: bash ./install-power-shell.sh
+         command: bash /home/circleci/project/test_repo/.circleci/install-power-shell.sh
       - run:
           name: Greeting
           command: echo Hello, world.
