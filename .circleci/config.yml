@@ -13,7 +13,7 @@ jobs:
          command: "ls -ltr"
       - run:
          name: "install powershell"
-         command: bash /home/circleci/project/test_repo/.circleci/install-power-shell.sh
+         command: bash .circleci/install-power-shell.sh
       - run:
           name: Greeting
           command: echo Hello, world.
